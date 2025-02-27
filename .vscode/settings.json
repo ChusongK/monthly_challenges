@@ -1,12 +1,15 @@
 {
     "python.languageServer": "Pylance",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFormatter": "black",  // ms-python.black-formatter 대신 black 사용
         "editor.formatOnSave": true
     },
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "black",  // 이미 black으로 설정되어 있으므로 이 부분은 유지
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
+    "editor.defaultFormatter": "vscode.css-language-features", // CSS 포맷터 설정
+    "css.validate": true,
+    "css.format.enable": true,
     "version": "0.2.0",
     "configurations": [
         {
